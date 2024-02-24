@@ -33,10 +33,16 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		</header>
 		<main>
 			<article>
-				<div class="hero-image">
-					{heroImage && <img width={1020} height={510} src={heroImage} alt="" />}
+				<div class="max-w-3xl py-6 mx-auto ">
+					<div class="overflow-hidden rounded-lg">
+						<div class="px-4 py-5 sm:p-6">
+						  <!-- Content goes here -->
+						  {heroImage && <img src={heroImage} alt="" class=" rounded-xl" />}
+						</div>
+					  </div>
+					  
 				</div>
-				<div class="prose lg:prose-xl mx-auto">
+				<div class="px-4 mx-auto prose lg:prose-xl">
 					<div class="">
 						<div class="">
 							<FormattedDate date={pubDate} />
@@ -49,7 +55,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 							}
 						</div>
 						<h1>{title}</h1>
-						<hr />
+				
 					</div>
 					<slot />
 				</div>
