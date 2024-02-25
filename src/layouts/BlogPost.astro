@@ -10,7 +10,9 @@ import FormattedDate from '../components/FormattedDate.astro';
 type Props = CollectionEntry<'blog'>['data'];
 
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+
 ---
+
 
 <html lang="en">
 	<head>
@@ -21,7 +23,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/nuhsfav.png" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
-		<link href="src/styles/global-web.css" rel="stylesheet">
+		<link href="/global-web.css" id="dynamic-style" rel="stylesheet">
 		
 	</head>
 
@@ -65,3 +67,26 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		<Foot />
 	</body>
 </html>
+
+<script>
+
+	document.addEventListener('DOMContentLoaded', () => {
+		const params = new URLSearchParams(window.location.search);
+		const theme = params.get('theme'); // Assuming the URL parameter is named 'theme'
+		
+		let themeCssPath = '/global-web.css'; // Default CSS path
+		if (theme === 'app') {
+			themeCssPath = '/app.css';
+			console.log('app')
+		} else if (theme === 'mobile-web') {
+			themeCssPath = '/mobile-web.css';
+			console.log('mobile-web')
+		}
+		
+		const styleElement = document.getElementById('dynamic-style');
+    if(styleElement instanceof HTMLLinkElement) {
+        styleElement.href = themeCssPath;
+    }
+	});
+	
+	</script>

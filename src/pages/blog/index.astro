@@ -23,8 +23,8 @@ const posts = (await getCollection('blog')).sort(
 				<div class="py-24 bg-white sm:py-32">
 					<div class="px-6 mx-auto max-w-7xl lg:px-8">
 					  <div class="max-w-2xl mx-auto text-center">
-						<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">From the health blog</h2>
-						<p class="mt-2 text-lg leading-8 text-gray-600">Learn how to grow your business with our expert advice.</p>
+						<h2 class="text-3xl font-bold tracking-tight sm:text-4xl">From the health blog</h2>
+						<p class="mt-2 text-lg leading-80">Learn how to grow your business with our expert advice.</p>
 					  </div>
 					  <div class="grid max-w-2xl grid-cols-1 mx-auto mt-16 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
 						
@@ -47,14 +47,14 @@ posts.map((post) => (
 								  {post.data.title}
 								</a>
 							  </h3>
-							  <p class="mt-1 text-sm leading-6 text-gray-600 line-clamp-3">{post.data.description}</p>
+							  <p class="mt-1 text-sm leading-6 line-clamp-3">{post.data.description}</p>
 							</a>
 							
 						  </div>
 						</article>
 						))
 					}
-						<!-- More posts... -->
+						
 					  </div>
 					</div>
 				  </div>
