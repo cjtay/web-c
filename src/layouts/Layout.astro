@@ -48,8 +48,10 @@ const { title } = Astro.props;
     let themeCssPath = 'src/styles/global-web.css'; // Default CSS path
     if (theme === 'app') {
         themeCssPath = 'src/styles/app.css';
+        console.log('theme change triggered - app')
     } else if (theme === 'mobile-web') {
         themeCssPath = 'src/styles/mobile-web.css';
+        console.log('theme change triggered - mobile-web')
     }
 
     const styleElement = document.getElementById('dynamic-style');

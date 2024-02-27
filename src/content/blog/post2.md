@@ -1,7 +1,7 @@
 ---
 title: "Protect Your Heart: 5 Simple Steps to Reduce Your Risk of Heart Disease"
 description: "Heart disease remains one of the leading causes of death worldwide, affecting individuals of all ages and backgrounds."
-pubDate: "Jul 22 2022"
+pubDate: "Jan 01 2023"
 heroImage: "/high2.png"
 ---
 

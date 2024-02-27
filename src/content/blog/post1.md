@@ -1,7 +1,7 @@
 ---
 title: "5 Simple Ways to Lower Your Blood Pressure Naturally"
 description: "High blood pressure, also known as hypertension, is a common yet serious health condition that affects millions of people worldwide. If left unchecked, it can lead to severe complications such as heart disease, stroke, and kidney failure. However, the good news is that there are several simple and effective ways to lower blood pressure naturally, without the need for medication. Here are five lifestyle changes you can make today to start improving your blood pressure:"
-pubDate: "Jul 08 2022"
+pubDate: "Feb 14 2024"
 heroImage: "/high1.jpeg"
 ---
 
