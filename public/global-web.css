@@ -12,23 +12,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  @apply text-blue-900 !important;
-}
-
+h6,
 p {
-  @apply text-gray-500 text-2xl !important;
-}
-
-#menu,
-#footer,
-#articles,
-#cta-links {
-  @apply hidden !important;
-}
-
-.button-blue {
-  @apply bg-blue-800 !important;
+  @apply text-gray-900;
 }
 
 /* a,
