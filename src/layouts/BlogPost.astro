@@ -16,6 +16,17 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 
 <html lang="en">
 	<head>
+
+		<!-- Google tag (gtag.js) -->
+<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-FGX3M398L2"></script>
+<script is:inline>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FGX3M398L2');
+</script>
+
 		<BaseHead title={title} description={description} />
 		<meta charset="UTF-8" />
 		<meta name="description" content="Web B description" />
