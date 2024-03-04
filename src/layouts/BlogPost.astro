@@ -28,8 +28,8 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
   gtag('config', 'G-YXJ0K3DZ94', {'cookie_prefix': 'omni'});
   gtag('config', 'G-CMHZP0XZLP', {'cookie_prefix': 'omni'});
 
-  gtag('event', 'testing', {'parameter_a':'value a' })
-  gtag('event', 'themes', {'theme': theme })
+  gtag('event', 'testing', {'parameter_a':'value from NUHC' })
+ 
   
 </script>
 
@@ -96,7 +96,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
             link.href = url.toString();
         });
     }
-
+	gtag('event', 'themes', {'theme': theme })
 
         // Define theme styles as objects or strings
         const themes = {
