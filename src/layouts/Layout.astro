@@ -18,10 +18,11 @@ import "../styles/global-web.css"
     <!-- Google tag (gtag.js) -->
 <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-FGX3M398L2"></script>
 <script is:inline>
-
+  
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
+
 
   gtag('config', 'G-FGX3M398L2');
   gtag('config', 'G-CMHZP0XZLP', {'cookie_prefix': 'omni'});
@@ -38,7 +39,7 @@ import "../styles/global-web.css"
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <!-- <link href="src/styles/global-web.css" id="dynamic-style" rel="stylesheet"> -->
-	
+
 </head>
 <body class="flex flex-col min-h-screen"> <!-- Apply Flexbox and min-height here -->
     <header>
@@ -113,6 +114,12 @@ p {
 
         
     });
+
+
+      const userName = 'Tay CJ';
+      const userRole = 'NUHC visitor';
+      gtag('set', 'user_properties', { 'name': userName, 'role': userRole });
+
 
     
     </script>
